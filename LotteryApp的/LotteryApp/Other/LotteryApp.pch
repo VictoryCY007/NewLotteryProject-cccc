@@ -1,0 +1,38 @@
+//
+//  LotteryApp.pch
+//  LotteryApp
+//
+//  Created by xin chen on 17/4/10.
+//  Copyright © 2017年 涂怀安. All rights reserved.
+//
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "DDInterfaceUrl.h"
+#import "TamUseScreenShot.h"
+#import "CommAttrs.h"
+#import "LoadHead.h"
+#import "InterfaceUrl.h"
+#import "CommUserDefault.h"
+#import "Identifi.h"
+#import "CommNotification.h"
+#import "CommUserInfo.h"
+#import "CommPlist.h"
+#import "SDKComm.h"
+
+// 自定义Log
+//#ifdef DEBUG
+//#define DDLog(...) NSLog(__VA_ARGS__)
+//#else
+//#define DDLog(...)
+//#endif
+
+#ifdef DEBUG
+#define DDLog(FORMAT,...) fprintf(stderr,"%s\n",[[NSString stringWithFormat:FORMAT,##__VA_ARGS__] UTF8String])
+#else
+#define DDLog(...)
+#endif
+
+#endif
