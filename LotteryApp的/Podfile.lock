@@ -1,0 +1,58 @@
+PODS:
+  - AWSCore (2.6.11)
+  - AWSS3 (2.6.11):
+    - AWSCore (= 2.6.11)
+  - Hyphenate (3.3.7)
+  - KSCrash/Core (1.15.16):
+    - KSCrash/Reporting/Filters/Basic
+  - KSCrash/Recording (1.15.16):
+    - KSCrash/Recording/Tools (= 1.15.16)
+  - KSCrash/Recording/Tools (1.15.16)
+  - KSCrash/Reporting/Filters/Base (1.15.16):
+    - KSCrash/Recording
+  - KSCrash/Reporting/Filters/Basic (1.15.16):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters/Base
+  - Sentry (3.13.1):
+    - Sentry/Core (= 3.13.1)
+    - Sentry/KSCrash (= 3.13.1)
+  - Sentry/Core (3.13.1)
+  - Sentry/KSCrash (3.13.1):
+    - KSCrash/Core (~> 1.15.12)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AWSS3
+  - Hyphenate
+  - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `3.13.1`)
+  - YYModel
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AWSCore
+    - AWSS3
+    - Hyphenate
+    - KSCrash
+    - YYModel
+
+EXTERNAL SOURCES:
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 3.13.1
+
+CHECKOUT OPTIONS:
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 3.13.1
+
+SPEC CHECKSUMS:
+  AWSCore: a461695bf302a32a366768bf36056be3a2c87d8d
+  AWSS3: d13e29a4dbfecb7cd99b4ce833a9fe221dee8cba
+  Hyphenate: 81e9566bf45e2c8a4a24a7750c9eeab25ad7497b
+  KSCrash: e4cda5c8612c5f9478defcf43418f24870d313f4
+  Sentry: c6c852d5a982dd42de8c35f7da4116af6081ebbd
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: f51b197eed5a3b70f5094bd1722d53409708e0f6
+
+COCOAPODS: 1.5.3

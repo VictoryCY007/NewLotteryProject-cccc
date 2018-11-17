@@ -1,0 +1,26 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+#use_frameworks!
+#workspace 'LotteryApp'
+#
+#target :'LotteryApp' do
+abstract_target 'CommonPods' do
+
+    pod 'AWSS3'
+    pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '3.13.1'
+    pod 'YYModel'
+    pod 'Hyphenate'
+
+    
+    target :'LotteryApp' do
+    end
+    target :'FCCP' do
+    end
+    target :'HCT' do
+    end
+    target :'TEST' do
+    end
+    target :'ZZCP' do
+    end
+end
